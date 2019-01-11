@@ -15,7 +15,7 @@ def packages_exist(pkg_names):
 
 
 def test_examples():
-    EXAMPLES_PATH = './examples'
+    EXAMPLES_PATH = os.path.join(os.path.dirname(__file__), '../examples')
     examples = [
         ([], ['MyFirstOP']),
         (['mxnet'], ['ConstantOP', 'RunROIAlign',
